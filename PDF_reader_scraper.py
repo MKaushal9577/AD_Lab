@@ -3,7 +3,7 @@ import google.generativeai as genai
 import requests
 from bs4 import BeautifulSoup
 from PyPDF2 import PdfReader
-os.environ["GOOGLE_API_KEY"] = "AIzaSyD7iKYBdYLxP5jp9WGWJ8cFbLrECH9dB6g"
+os.environ["GOOGLE_API_KEY"] = "AIzaSyD7iKYBdYLxP5jp9WGWJ8cFbLrECH9d"
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 def scrape_website(url):
     response = requests.get(url)
